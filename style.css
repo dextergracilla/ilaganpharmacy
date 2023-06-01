@@ -9,10 +9,15 @@ body{
 	font-family: montserrat;
 }
 nav{
-	background: black;
+	background: rgb(131, 218, 231);
 	height: 80px;
 	width: 100%;
 }
+img{
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
 label.logo{
 	color: white;
 	font-size: 35px;
@@ -37,7 +42,8 @@ nav ul li a{
 	text-transform: uppercase;
 }
 a.active,a:hover{
-	background: lightpink;
+	background: black;
+	/* background: rgb(131, 218, 231); */
 	transition: .5s;
 }
 .checkbtn{
