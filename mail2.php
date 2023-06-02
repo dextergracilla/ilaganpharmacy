@@ -3,15 +3,12 @@
 session_start(); 
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
-$email = $_POST["email"];
-$name = $_POST["name"];
-$subject = $_POST["subject"];
-$message = $_POST["message"];
+
  
-$_SESSION['email'] = $email;
-$_SESSION['name'] = $name;
-$_SESSION['subject'] = $subject;
-$_SESSION['message'] = $message;
+$email = $_SESSION['email'];
+$name = $_SESSION['name'];
+$subject = $_SESSION['subject'];
+$message = $_SESSION['message'];
 
 
 use PHPMailer\PHPMailer\PHPMailer;
