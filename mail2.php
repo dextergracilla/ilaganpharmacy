@@ -32,23 +32,23 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'dextergracilla03@gmail.com';                     //SMTP username
-    $mail->Password   = 'twymzixhexbsajnu';                               //SMTP password
+    $mail->Username   = 'dextergracilla@gmail.com';                     //SMTP username
+    $mail->Password   = 'gxydqpuukirwunrf';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('dextergracilla@gmail.com', $name);
-    $mail->addAddress('dextergracilla@gmail.com');     //Add a recipient
+    $mail->setFrom($email, $name);
+    $mail->addAddress($email);     //Add a recipient
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = $subject;
-    $mail->Body    = $message;
+    $mail->Body    = 'Thankyou so much for your loving support!';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
     echo 'Message has been sent';
 
-    header("Location:mail2.php");
+    header("Location:index.html");
     exit();
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
