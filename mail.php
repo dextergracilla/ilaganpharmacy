@@ -39,7 +39,7 @@ try {
 
     //Recipients
     $mail->setFrom('dextergracilla@gmail.com', $name);
-    $mail->addAddress('');     //Add a recipient
+    $mail->addAddress('dextergracilla@gmail.com');     //Add a recipient
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = $subject;
     $mail->Body    = $message;
