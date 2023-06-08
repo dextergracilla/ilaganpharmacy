@@ -92,7 +92,7 @@ a.active,a:hover{
 }
 }
 section{
-	background: url(download.png) no repeat;
+	background: url(background.jpg) no repeat;
 	background-size: cover;
 	height: calc(100vh - 80px);
 }

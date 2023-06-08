@@ -9,7 +9,7 @@ body{
 	font-family: montserrat;
 }
 nav{
-	background: rgb(131, 218, 231);
+	background: rgba(15, 4, 101, 0.862);
 	height: 80px;
 	width: 100%;
 }
@@ -98,7 +98,7 @@ a.active,a:hover{
 }
 }
 section{
-	background: url(download.png) no repeat;
+	background: url(background.png) no repeat;
 	background-size: cover;
 	height: calc(100vh - 80px);
 }

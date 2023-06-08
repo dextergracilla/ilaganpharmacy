@@ -39,7 +39,9 @@ try {
     $mail->addAddress($email);     //Add a recipient
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = $subject;
-    $mail->Body    = 'Thankyou so much for your loving support!';
+    $mail->Body    = 'Dear customer, We are always looking for ways to improve at Ilagan Pharmacy, 
+                      and your opinions matter to us and your feedback is used to improve how we work and
+                      ensure we deliver a consistently high-quality service.';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
