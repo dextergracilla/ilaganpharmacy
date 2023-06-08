@@ -41,7 +41,8 @@ try {
     $mail->Subject = $subject;
     $mail->Body    = 'Dear customer, We are always looking for ways to improve at Ilagan Pharmacy, 
                       and your opinions matter to us and your feedback is used to improve how we work and
-                      ensure we deliver a consistently high-quality service.';
+                      ensure we deliver a consistently high-quality service. Please Contact us at ilaganpharmacy@gmail.com
+                      for more info and suggestions!';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
